@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- google-site-verification: added after Search Console issues the token -->
+  <title>hermes-workspace</title>
+  <style>
+    body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 46rem;
+           margin: 3rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1b1b1b; }
+    h1 { margin-bottom: .25rem; }
+    .sub { color: #5a5a5a; margin-top: 0; }
+    code { background: #f2f2f2; padding: .1rem .35rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>hermes-workspace</h1>
+  <p class="sub">A private OAuth client for the Google Workspace APIs.</p>
+
+  <p>
+    <strong>hermes-workspace</strong> is a personal OAuth 2.0 client used by a single
+    user to let their self-hosted <a href="https://hermes-agent.nousresearch.com/docs/">Hermes Agent</a>
+    instance read and write their own Google account data.
+  </p>
+
+  <p>
+    The client runs locally on the owner's own machine as a command-line tool. It is not a
+    public service, it has no sign-up, and it does not accept users or data from anyone else.
+    All API calls are made directly from the owner's computer to the Google APIs using the
+    owner's own credentials.
+  </p>
+
+  <h2>How the data is used</h2>
+  <p>
+    Access is limited to the Google account of the person who authorizes it. The client uses
+    the Gmail, Google Calendar, Google Drive, Google Sheets, Google Docs and People APIs only
+    to perform the tasks that account owner explicitly asks for, for example searching their
+    own mail, reading their own calendar agenda, uploading a file they selected to their own
+    Drive, or reading a spreadsheet they pointed at.
+  </p>
+  <p>
+    OAuth tokens are stored locally on the owner's machine in the Hermes Agent configuration
+    directory. Nothing is uploaded to any server operated by this project, because this
+    project does not operate any server.
+  </p>
+
+  <p><a href="privacy.html">Privacy policy</a></p>
+</body>
+</html>
